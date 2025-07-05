@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me - Akhilesh Pant</title>
-  <link rel="stylesheet" href="https://pantakhilesh.github.io/Portfolio/portfolio-personal-main/css/style.css">
-  <style>
-    /* Additional styling to blend with your existing portfolio */
-    body {
-      background-color: #081b29;
-      color: #ededed;
-    }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Akhilesh Portfolio</title>
+    </head>
+    <body>
 
-    .about-section {
-      max-width: 900px;
-      margin: 100px auto;
-      padding: 20px;
-      background-color: #112e42;
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    }
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Portfolio</a>
+                </div>
 
-    .about-section h1 {
-      font-size: 36px;
-      color: #00abf0;
-      text-align: center;
-      margin-bottom: 20px;
-    }
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="" onclick="javascipt:window.open('assets/about/about.html');" class="nav__link">About me</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="mailto:akhileshpantofficial@gmail.com" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-    .about-section p {
-      font-size: 18px;
-      line-height: 1.7;
-      margin-bottom: 16px;
-    }
-  </style>
-</head>
-<body>
-  <section class="about-section">
-    <h1>About Me</h1>
+                <div class="nav__toggle" id="nav-toggle">
+                    <ion-icon name="menu"></ion-icon>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main bd-grid">
+            <div class="home">
+                <div class="home__information">
+                    <h1>About Me</h1>
     <p>I'm <strong>Akhilesh Pant</strong>, a Computer Science undergraduate at <strong>Graphic Era Hill University</strong>, Dehradun. I’m passionate about <strong>problem-solving, networking, and cybersecurity</strong>.</p>
     <p>I've worked on projects ranging from OCR text extraction and Amazon product scraping to PAN card tampering detection using image recognition. My technical stack includes <strong>C, C++, Java, Python</strong>, <strong>HTML, CSS, JavaScript</strong>, and <strong>MySQL</strong>.</p>
     <p>During my internship at <strong>THDC India Limited</strong>, I simulated complex networks using <strong>GNS3</strong> and integrated <strong>Cumulus Nimbus</strong> for automation. I also took part in the <strong>PwC Cyber Risk & Regulatory Launchpad Program</strong>.</p>
     <p>Alongside my technical work, I’ve earned a <strong>silver medal in badminton</strong> and am recognized for being a team player with strong time management and pressure-handling skills.</p>
     <p>Let’s connect and create something impactful together!</p>
-  </section>
+                    
+                    <div>
+                        <a href="" class="home__button anime-text" onclick="javascipt:window.open('assets/resume/AkhileshPant_Resume.pdf');" class="popup">DOWNLOAD CV</a>
+                    </div>
+                </div>
 
-  <script>
-    console.log("About Me section loaded in portfolio design style.");
-  </script>
-</body>
+                <div class="home__img">
+                    <img src="assets/img/background_img_2.jpg" alt="">
+                </div>
+                
+                <div class="home__social">
+                    <ion-icon name="logo-facebook" class="home__social-icon"></ion-icon>
+                    <ion-icon name="logo-instagram" class="home__social-icon"></ion-icon>
+                    <ion-icon name="logo-twitter" class="home__social-icon"></ion-icon>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+        <!-- MAIN -->
+        <script src="assets/js/main.js"></script>
+    
+        <!-- ICONS -->
+        <script  type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    </body>
 </html>
